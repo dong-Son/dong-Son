@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>函数 | 一只野生东子</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <meta name="description" content="函数的概念函数是一段可以反复调用的代码块。 作用在程序设计中，常将一些常用的功能模块编写成函数，以减少重复编写程序段的工作量。提高代码的复用性、可读性等">
+<meta property="og:type" content="article">
+<meta property="og:title" content="函数">
+<meta property="og:url" content="http://example.com/2019/10/24/%E5%87%BD%E6%95%B0/index.html">
+<meta property="og:site_name" content="一只野生东子">
+<meta property="og:description" content="函数的概念函数是一段可以反复调用的代码块。 作用在程序设计中，常将一些常用的功能模块编写成函数，以减少重复编写程序段的工作量。提高代码的复用性、可读性等">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-10-23T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-11-26T06:27:30.023Z">
+<meta property="article:author" content="东子">
+<meta property="article:tag" content="javaScript">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="一只野生东子" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/images/title.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/highlight.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="fullpage" class="mobile-nav-right">
+    
+      <div id="wrapper" title="图片来自网络">
+    
+    
+      <header id="header">
+  <div id="nav-toggle" class="nav-toggle"></div>
+  <div class="head-box global-width">
+    <nav class="nav-box nav-right">
+      
+        <a class="nav-item" href="/" title
+        
+        >首页</a>
+      
+        <a class="nav-item" href="/archives" title
+        
+        >归档</a>
+      
+    </nav>
+  </div>
+</header>
+      <div id="middlecontent" title class="global-width sidebar-right">
+        <section id="main"><article id="post-函数" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 class="article-title" itemprop="name">
+      函数
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2019/10/24/%E5%87%BD%E6%95%B0/" class="article-date">
+  <time datetime="2019-10-23T16:00:00.000Z" itemprop="datePublished">2019-10-24</time>
+</a>
+    
+    
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javaScript/" rel="tag">javaScript</a></li></ul>
+
+  </div>
+  
+    <span id="busuanzi_container_page_pv">
+      本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+    </span>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <h3 id="函数的概念"><a href="#函数的概念" class="headerlink" title="函数的概念"></a>函数的概念</h3><p>函数是一段可以反复调用的代码块。</p>
+<p>作用<br>在程序设计中，常将一些常用的功能模块编写成函数，以减少重复编写程序段的工作量。<br>提高代码的复用性、可读性等</p>
+<span id="more"></span> 
+
+<h3 id="函数的创建方式（函数的声明）"><a href="#函数的创建方式（函数的声明）" class="headerlink" title="函数的创建方式（函数的声明）"></a>函数的创建方式（函数的声明）</h3><ol>
+<li>function 命令<br>function 命令声明的代码区块，就是一个函数。function 命令后面是函数名，函数名后面是一对圆括号。函数体放在大括号里面。<br>function 函数名称() {<br>   函数中要执行的代码;<br>}</li>
+</ol>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">print</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>上面的代码命名了一个 print 函数，以后使用 print()这种形式，就可以调用相应的代码。这叫做函数的声明</p>
+<ol start="2">
+<li>函数表达式<br>除了用 function 命令声明函数，还可以采用变量赋值的写法。</li>
+</ol>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> print = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="number">1</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></div>
+
+<p>这种写法将一个匿名函数（没有名字的函数）赋值给变量。这时，这个匿名函数又称函数表达式</p>
+<h3 id="函数的执行-调用"><a href="#函数的执行-调用" class="headerlink" title="函数的执行(调用)"></a>函数的执行(调用)</h3><p>函数定义好之后，函数中的代码在程序运行过程中不会执行；</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">print</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line">print();</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="事件的概念种类"><a href="#事件的概念种类" class="headerlink" title="事件的概念种类"></a>事件的概念种类</h3><p>事件：就是发生的事情<br>事件驱动：就是发生了某件事情之后要处理的手段和过程</p>
+<ol>
+<li>鼠标事件<br>onclick 鼠标单击<br>ondbclick 鼠标双击<br>onmousedown 鼠标按键按下<br>onmouseup 鼠标按键抬起<br>onmousemove 鼠标在元素上移动<br>onmouseout 鼠标移出<br>onmouseenter 鼠标移入</li>
+<li>键盘事件<br>onkeydown 键盘按键按下<br>onkeyup 键盘按键抬起<br>onkeypress 键盘按键按住</li>
+<li>表单事件<br>onblur 失去焦点<br>onfocus 获取焦点<br>onchange 内容修改</li>
+</ol>
+<h3 id="参数的声明"><a href="#参数的声明" class="headerlink" title="参数的声明"></a>参数的声明</h3><p>函数名后面是一对圆括号，里面是传入函数的参数<br>function 函数名称(参数列表){<br>    函数体中的代码;<br>}<br>函数定义的时候的参数，称为形参</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">print</span>(<span class="params">s</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(s);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(a + b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>参数的传递<br>print（1）；<br>调用函数的时候，传入了 参数 1，1 的值给了形参 s。<br>函数调用时候传入的参数叫做实参</p>
+<h3 id="函数的返回值"><a href="#函数的返回值" class="headerlink" title="函数的返回值"></a>函数的返回值</h3><p>JavaScript 引擎遇到 return 语句，就直接返回 return 后面的那个表达式的值,后面即使还有语句，也不会得到执行。<br>也就是说，return 语句所带的那个表达式，就是函数的返回值。</p>
+<p>注、return 语句不是必需的，如果没有的话，该函数就不返回任何值，或者说返回 undefined。</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">x, y</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> x + y; <span class="comment">//返回x+y的和</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> res = add(<span class="number">1</span>, <span class="number">1</span>); <span class="comment">//把函数的返回值 赋值给 变量res</span></span><br><span class="line"><span class="built_in">console</span>.log(res); <span class="comment">//2</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="变量的声明提升"><a href="#变量的声明提升" class="headerlink" title="变量的声明提升"></a>变量的声明提升</h3><p>函数内部会产生“变量提升”现象。在函数内部使用 var 命令声明的变量，不管在什么位置，变量声明都会被提升到函数体的头部。</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (x &gt; <span class="number">100</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> tmp = x - <span class="number">100</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> tmp;</span><br><span class="line">  <span class="keyword">if</span> (x &gt; <span class="number">100</span>) &#123;</span><br><span class="line">    tmp = x - <span class="number">100</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="arguments"><a href="#arguments" class="headerlink" title="arguments"></a>arguments</h3><p>由于 JavaScript 允许函数有不定数目的参数，所以需要一种机制，可以在函数体内部读取所有参数。这就是 arguments 对象的由来。<br>arguments 对象包含了函数运行时的所有参数，arguments[0]就是第一个参数，arguments[1]就是第二个参数，以此类推。这个对象只有在函数体内部，才可以使用。</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> f = <span class="function"><span class="keyword">function</span> (<span class="params">one</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">arguments</span>[<span class="number">0</span>]);</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">arguments</span>[<span class="number">1</span>]);</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">arguments</span>[<span class="number">2</span>]);</span><br><span class="line">&#125;;</span><br><span class="line">f(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>);</span><br></pre></td></tr></table></figure></div>
+
+<p>通过 arguments 对象的 length 属性，可以判断函数调用时到底带几个参数</p>
+<h3 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h3><p>作用域（scope）指的是变量存在的范围。<br>局部作用域和全局作用域<br>在 ES5 的规范中，Javascript 只有两种作用域：<br>一种是全局作用域，变量在整个程序中一直存在，所有地方都可以读取；<br>另一种是函数作用域，变量只在函数内部存在。</p>
+<p>函数外部声明的变量就是全局变量（global variable）<br>在函数内部定义的(使用 var)变量，外部无法读取，顾称为“局部变量”（local variable）</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> v = <span class="number">1</span>; <span class="comment">//全局变量</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> b = <span class="number">2</span>; <span class="comment">//局部变量</span></span><br><span class="line">  <span class="built_in">console</span>.log(b);</span><br><span class="line">  <span class="built_in">console</span>.log(v); <span class="comment">//它在函数内部可以读取全局变量，但是局部变量的不能再函数外部访问</span></span><br><span class="line">&#125;</span><br><span class="line">f();</span><br></pre></td></tr></table></figure></div>
+
+<p>上面的代码表明，函数 f 内部可以读取全局变量 v。</p>
+<p>函数内部定义的变量，会在该作用域内覆盖同名全局变量。（山高皇帝远，县官不如现管）</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> v = <span class="number">1</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> v = <span class="number">2</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(v);</span><br><span class="line">&#125;</span><br><span class="line">f(); <span class="comment">// 2</span></span><br><span class="line">v; <span class="comment">// 1</span></span><br></pre></td></tr></table></figure></div>
+
+<p>上面代码中，变量 v 同时在函数的外部和内部有定义。结果，在函数内部定义，局部变量 v 覆盖了全局变量 v。</p>
+<p>注意，对于 var 命令来说，局部变量只能在函数内部声明，在其他区块中声明，一律都是全局变量。</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">  <span class="keyword">var</span> x = <span class="number">5</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(x); <span class="comment">// 5</span></span><br></pre></td></tr></table></figure></div>
+
+<p>上面代码中，变量 x 在条件判断区块之中声明，结果就是一个全局变量，<br>可以在区块之外读取。</p>
+<h3 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h3><p>函数可以调用自身，这就是递归。</p>
+<p>简单来说，就是函数自己执行过程中，调用自己本身。</p>
+<p>f（n）求前 n 项和</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">F(n)=F(n-<span class="number">1</span>)+n = F(n-<span class="number">2</span>)+n-<span class="number">1</span> +n= F(n-<span class="number">3</span>)+n-<span class="number">2</span> + n-<span class="number">1</span> + n</span><br><span class="line">......   F(<span class="number">1</span>)+<span class="number">2</span>+<span class="number">3</span>+<span class="number">4.</span>... n-<span class="number">1</span> + n</span><br><span class="line"><span class="comment">// F(100)= F(99)+100= F(98)+99+100 = F(1)+2+3+4.....+99+100</span></span><br></pre></td></tr></table></figure></div>
+
+<p>递归的步骤：</p>
+<ol>
+<li>先找临界值，即无需计算 就能获取的值</li>
+<li>找本次 和上一次的关系 f（n） = f(n-1)+n (数学归纳)</li>
+<li>假设 当前函数已经可以使用了，调用自身计算上一次的运行结果，再写出本次运行结果 即可</li>
+</ol>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//求1-n之间的和</span></span><br><span class="line"><span class="comment">//1 ........ 100</span></span><br><span class="line"><span class="comment">//  1-  1000</span></span><br><span class="line"><span class="comment">//1. 临界值1</span></span><br><span class="line"><span class="comment">//2. sum(n-1)+n = sum(n)</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum1</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">  <span class="comment">//临界值</span></span><br><span class="line">  <span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> sum1(n - <span class="number">1</span>) + n;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="构造函数及对象类型"><a href="#构造函数及对象类型" class="headerlink" title="构造函数及对象类型"></a>构造函数及对象类型</h3><p>面向对象编程（Object Oriented Programming，缩写为 OOP）是目前主流的编程范式。它将真实世界各种复杂的关系，抽象为一个个对象，然后由对象之间的分工与合作，完成对真实世界的模拟。</p>
+<p>面向对象编程的第一步，就是要生成对象。对象是单个实物的抽象。通常需要一个模板，表示某一类实物的共同特征，然后对象根据这个模板生成</p>
+<p>JavaScript 语言使用构造函数（constructor）作为对象的模板。所谓”构造函数”，就是专门用来生成实例对象的函数。它就是对象的模板，描述实例对象的基本结构。一个构造函数，可以生成多个实例对象，这些实例对象都有相同的结构。</p>
+<p>构造函数就是一个普通的函数，但是有自己的特征和用法。</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Vehicle</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.price = <span class="number">1000</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>上面代码中，Vehicle 就是构造函数。为了与普通函数区别，构造函数名字的第一个字母通常大写。<br>构造函数的特点有两个。<br>函数体内部使用了 this 关键字，代表了所要生成的对象实例。<br>生成对象的时候，必须使用 new 命令</p>
+<p>new 命令的作用，就是执行构造函数，返回一个实例对象。</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Vehicle</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.price = <span class="number">1000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> v = <span class="keyword">new</span> Vehicle();</span><br><span class="line">v.price; <span class="comment">// 1000</span></span><br></pre></td></tr></table></figure></div>
+
+<p>上面代码通过 new 命令，让构造函数 Vehicle 生成一个实例对象，保存在变量 v 中。这个新生成的实例对象，从构造函数 Vehicle 得到了 price 属性。new 命令执行时，构造函数内部的 this，就代表了新生成的实例对象，this.price 表示实例对象有一个 price 属性，值是 1000。</p>
+<hr>
+<p>本文作者： 一只野生东子</p>
+
+      
+    </div>
+    
+      <footer class="article-footer">
+        完
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  <div class="article-nav-block">
+    
+      <a href="/2019/10/26/%E7%9B%92%E6%A8%A1%E5%9E%8B/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption"></strong>
+        <div class="article-nav-title">
+          
+            盒模型
+          
+        </div>
+      </a>
+    
+  </div>
+  <div class="article-nav-block">
+    
+      <a href="/2019/10/22/css3D%E8%BD%AC%E6%8D%A2%E5%92%8C%E5%85%B3%E9%94%AE%E5%B8%A7%E5%8A%A8%E7%94%BB/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">css3D转换和关键帧动画</div>
+        <strong class="article-nav-caption"></strong>
+      </a>
+    
+  </div>
+</nav>
+
+    <link rel="stylesheet" href="/css/gitment.css"> 
+<script src="/js/gitment.js"></script>
+
+<div id="gitmentContainer"></div>
+
+<script>
+var gitment = new Gitment({
+  owner: '',
+  repo: '',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('gitmentContainer')
+</script>
+
+  
+  
+</article>
+</section>
+        <aside id="sidebar">
+  
+    <div class="widget-box">
+  <div class="avatar-box">
+    <img class="avatar" src="/images/pander.jpg" title="图片来自网络"></img>
+    <h3 class="avatar-name">
+      
+        东子
+      
+    </h3>
+    <p class="avatar-slogan">
+      一 个 不 会 设 计 不 会 配 色 的 前 端 渣 渣
+    </p>
+  </div>
+</div>
+
+
+  
+    
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTTP/" rel="tag">HTTP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog%E3%80%81bash/" rel="tag">blog、bash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css%E3%80%81BFC/" rel="tag">css、BFC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css%E3%80%81%E7%9B%92%E6%A8%A1%E5%9E%8B/" rel="tag">css、盒模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html%E3%80%81css/" rel="tag">html、css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript/" rel="tag">javaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript%E3%80%81Array/" rel="tag">javaScript、Array</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript%E3%80%81css/" rel="tag">javaScript、css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript%E3%80%81es6/" rel="tag">javaScript、es6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/" rel="tag">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vuex/" rel="tag">vuex</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/blog%E3%80%81bash/" style="font-size: 10px;">blog、bash</a> <a href="/tags/css/" style="font-size: 15px;">css</a> <a href="/tags/css%E3%80%81BFC/" style="font-size: 10px;">css、BFC</a> <a href="/tags/css%E3%80%81%E7%9B%92%E6%A8%A1%E5%9E%8B/" style="font-size: 10px;">css、盒模型</a> <a href="/tags/html%E3%80%81css/" style="font-size: 10px;">html、css</a> <a href="/tags/javaScript/" style="font-size: 20px;">javaScript</a> <a href="/tags/javaScript%E3%80%81Array/" style="font-size: 10px;">javaScript、Array</a> <a href="/tags/javaScript%E3%80%81css/" style="font-size: 10px;">javaScript、css</a> <a href="/tags/javaScript%E3%80%81es6/" style="font-size: 10px;">javaScript、es6</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/vue/" style="font-size: 15px;">vue</a> <a href="/tags/vuex/" style="font-size: 10px;">vuex</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/9999/09/">September 9999</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/9999/09/09/%E5%A5%B6%E8%8C%B6/">嗷嗷嗷</a>
+          </li>
+        
+          <li>
+            <a href="/2021/11/29/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/11/%E5%85%B3%E4%BA%8Evuex/">关于VUEX</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/18/%E5%85%B3%E4%BA%8Evue/">关于VUE</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/13/vue%E9%9A%8F%E7%AC%94/">vue开发中需要注意的一些内容</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+      <div class="widget-box">
+    <h3 class="widget-title">友链</h3>
+    <div class="widget">
+      
+        <a style="display: block;" href="https://yiluyanxia.github.io/" title target='_blank'
+        >一路眼瞎</a>
+      
+    </div>
+  </div>
+
+  
+</aside>
+      </div>
+      <footer id="footer">
+  <div class="foot-box global-width">
+    &copy; 2021 东子 &nbsp;&nbsp;
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    &nbsp;|&nbsp;主题 <a target="_blank" rel="noopener" href="https://github.com/yiluyanxia/hexo-theme-antiquity">antiquity</a>
+    <br>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv">不蒜子告之   阁下是第<span id="busuanzi_value_site_pv"></span>个访客</span>
+  </div>
+</footer>
+      <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script>
+if (!window.jQuery) {
+var script = document.createElement('script');
+script.src = "/js/jquery-2.0.3.min.js";
+document.body.write(script);
+}
+</script>
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+    </div>
+    <nav id="mobile-nav" class="mobile-nav-box">
+  <div class="mobile-nav-img mobile-nav-top"></div>
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">归档</a>
+  
+  <div class="mobile-nav-img  mobile-nav-bottom"></div>
+</nav>    
+  </div>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>盒模型 | 一只野生东子</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <meta name="description" content="什么是 BFCBFC(Block formatting context)译为”块格式化上下文”，是一个独立的渲染区域，规定了内部的子元素如何布局，并且与这个区域外部毫不相干。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="盒模型">
+<meta property="og:url" content="http://example.com/2019/11/06/BFC/index.html">
+<meta property="og:site_name" content="一只野生东子">
+<meta property="og:description" content="什么是 BFCBFC(Block formatting context)译为”块格式化上下文”，是一个独立的渲染区域，规定了内部的子元素如何布局，并且与这个区域外部毫不相干。">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-11-05T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-11-26T06:35:29.949Z">
+<meta property="article:author" content="东子">
+<meta property="article:tag" content="css、BFC">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="一只野生东子" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/images/title.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/highlight.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="fullpage" class="mobile-nav-right">
+    
+      <div id="wrapper" title="图片来自网络">
+    
+    
+      <header id="header">
+  <div id="nav-toggle" class="nav-toggle"></div>
+  <div class="head-box global-width">
+    <nav class="nav-box nav-right">
+      
+        <a class="nav-item" href="/" title
+        
+        >首页</a>
+      
+        <a class="nav-item" href="/archives" title
+        
+        >归档</a>
+      
+    </nav>
+  </div>
+</header>
+      <div id="middlecontent" title class="global-width sidebar-right">
+        <section id="main"><article id="post-BFC" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 class="article-title" itemprop="name">
+      盒模型
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2019/11/06/BFC/" class="article-date">
+  <time datetime="2019-11-05T16:00:00.000Z" itemprop="datePublished">2019-11-06</time>
+</a>
+    
+    
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css%E3%80%81BFC/" rel="tag">css、BFC</a></li></ul>
+
+  </div>
+  
+    <span id="busuanzi_container_page_pv">
+      本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+    </span>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <h3 id="什么是-BFC"><a href="#什么是-BFC" class="headerlink" title="什么是 BFC"></a>什么是 BFC</h3><p>BFC(Block formatting context)译为”块格式化上下文”，是一个独立的渲染区域，规定了内部的子元素如何布局，并且与这个区域外部毫不相干。</p>
+<span id="more"></span> 
+
+<h3 id="哪些元素会生成-BFC"><a href="#哪些元素会生成-BFC" class="headerlink" title="哪些元素会生成 BFC"></a>哪些元素会生成 BFC</h3><ol>
+<li>根元素 html</li>
+<li>float 属性不为 none</li>
+<li>position 为 absolute 或 fixed</li>
+<li>display 为 inline-block, table-cell, table-caption, flex, inline-flex</li>
+<li>overflow 不为 visible（除非该值已经被传播到视口）</li>
+</ol>
+<h3 id="BFC-布局规则是怎样的"><a href="#BFC-布局规则是怎样的" class="headerlink" title="BFC 布局规则是怎样的"></a>BFC 布局规则是怎样的</h3><ol>
+<li>内部的 Box 会在垂直方向，一个接一个地放置。</li>
+<li>Box 垂直方向的距离由 margin 决定。属于同一个 BFC 的两个相邻 Box 的 margin 会发生重叠</li>
+<li>每个元素的 margin box 的左边， 与包含块 border box 的左边相接触(对于从左往右的格式化，否则相反)。即使存在浮动也是如此。</li>
+<li>BFC 的区域不会与 float box 重叠。</li>
+<li>BFC 就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素。反之也如此。</li>
+<li>计算 BFC 的高度时，浮动元素也参与计算</li>
+<li>并不是只有块元素才会生成 BFC，任何元素只要符合条件即可生成 BFC</li>
+</ol>
+<h3 id="BFC-的应用"><a href="#BFC-的应用" class="headerlink" title="BFC 的应用"></a>BFC 的应用</h3><ol>
+<li>自适应两栏布局</li>
+<li>清除内部浮动</li>
+<li>防止 margin 上下重叠</li>
+</ol>
+<hr>
+<p>本文作者： 一只野生东子</p>
+
+      
+    </div>
+    
+      <footer class="article-footer">
+        完
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  <div class="article-nav-block">
+    
+      <a href="/2019/11/15/%E5%85%B3%E4%BA%8EES5%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2string/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption"></strong>
+        <div class="article-nav-title">
+          
+            关于ES5和字符串string
+          
+        </div>
+      </a>
+    
+  </div>
+  <div class="article-nav-block">
+    
+      <a href="/2019/10/26/%E7%9B%92%E6%A8%A1%E5%9E%8B/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">盒模型</div>
+        <strong class="article-nav-caption"></strong>
+      </a>
+    
+  </div>
+</nav>
+
+    <link rel="stylesheet" href="/css/gitment.css"> 
+<script src="/js/gitment.js"></script>
+
+<div id="gitmentContainer"></div>
+
+<script>
+var gitment = new Gitment({
+  owner: '',
+  repo: '',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('gitmentContainer')
+</script>
+
+  
+  
+</article>
+</section>
+        <aside id="sidebar">
+  
+    <div class="widget-box">
+  <div class="avatar-box">
+    <img class="avatar" src="/images/pander.jpg" title="图片来自网络"></img>
+    <h3 class="avatar-name">
+      
+        东子
+      
+    </h3>
+    <p class="avatar-slogan">
+      一 个 不 会 设 计 不 会 配 色 的 前 端 渣 渣
+    </p>
+  </div>
+</div>
+
+
+  
+    
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTTP/" rel="tag">HTTP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog%E3%80%81bash/" rel="tag">blog、bash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css%E3%80%81BFC/" rel="tag">css、BFC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css%E3%80%81%E7%9B%92%E6%A8%A1%E5%9E%8B/" rel="tag">css、盒模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html%E3%80%81css/" rel="tag">html、css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript/" rel="tag">javaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript%E3%80%81Array/" rel="tag">javaScript、Array</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript%E3%80%81css/" rel="tag">javaScript、css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript%E3%80%81es6/" rel="tag">javaScript、es6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/" rel="tag">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vuex/" rel="tag">vuex</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/blog%E3%80%81bash/" style="font-size: 10px;">blog、bash</a> <a href="/tags/css/" style="font-size: 15px;">css</a> <a href="/tags/css%E3%80%81BFC/" style="font-size: 10px;">css、BFC</a> <a href="/tags/css%E3%80%81%E7%9B%92%E6%A8%A1%E5%9E%8B/" style="font-size: 10px;">css、盒模型</a> <a href="/tags/html%E3%80%81css/" style="font-size: 10px;">html、css</a> <a href="/tags/javaScript/" style="font-size: 20px;">javaScript</a> <a href="/tags/javaScript%E3%80%81Array/" style="font-size: 10px;">javaScript、Array</a> <a href="/tags/javaScript%E3%80%81css/" style="font-size: 10px;">javaScript、css</a> <a href="/tags/javaScript%E3%80%81es6/" style="font-size: 10px;">javaScript、es6</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/vue/" style="font-size: 15px;">vue</a> <a href="/tags/vuex/" style="font-size: 10px;">vuex</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/9999/09/">September 9999</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/9999/09/09/%E5%A5%B6%E8%8C%B6/">嗷嗷嗷</a>
+          </li>
+        
+          <li>
+            <a href="/2021/11/29/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/11/%E5%85%B3%E4%BA%8Evuex/">关于VUEX</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/18/%E5%85%B3%E4%BA%8Evue/">关于VUE</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/13/vue%E9%9A%8F%E7%AC%94/">vue开发中需要注意的一些内容</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+      <div class="widget-box">
+    <h3 class="widget-title">友链</h3>
+    <div class="widget">
+      
+        <a style="display: block;" href="https://yiluyanxia.github.io/" title target='_blank'
+        >一路眼瞎</a>
+      
+    </div>
+  </div>
+
+  
+</aside>
+      </div>
+      <footer id="footer">
+  <div class="foot-box global-width">
+    &copy; 2021 东子 &nbsp;&nbsp;
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    &nbsp;|&nbsp;主题 <a target="_blank" rel="noopener" href="https://github.com/yiluyanxia/hexo-theme-antiquity">antiquity</a>
+    <br>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv">不蒜子告之   阁下是第<span id="busuanzi_value_site_pv"></span>个访客</span>
+  </div>
+</footer>
+      <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script>
+if (!window.jQuery) {
+var script = document.createElement('script');
+script.src = "/js/jquery-2.0.3.min.js";
+document.body.write(script);
+}
+</script>
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+    </div>
+    <nav id="mobile-nav" class="mobile-nav-box">
+  <div class="mobile-nav-img mobile-nav-top"></div>
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">归档</a>
+  
+  <div class="mobile-nav-img  mobile-nav-bottom"></div>
+</nav>    
+  </div>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>移动端布局 | 一只野生东子</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <meta name="description" content="响应式网站设计什么是响应式布局  服务器根据不同的浏览器用户端，为用户呈现不同的页面效果。 可以让一个网站兼容不同分辨率的设备，给用户更好的视觉使用体验。 移动互联网催生了响应式布局的诞生。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动端布局">
+<meta property="og:url" content="http://example.com/2020/01/12/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%B8%83%E5%B1%80/index.html">
+<meta property="og:site_name" content="一只野生东子">
+<meta property="og:description" content="响应式网站设计什么是响应式布局  服务器根据不同的浏览器用户端，为用户呈现不同的页面效果。 可以让一个网站兼容不同分辨率的设备，给用户更好的视觉使用体验。 移动互联网催生了响应式布局的诞生。">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-01-11T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-11-26T08:25:04.190Z">
+<meta property="article:author" content="东子">
+<meta property="article:tag" content="html、css">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="一只野生东子" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/images/title.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/highlight.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="fullpage" class="mobile-nav-right">
+    
+      <div id="wrapper" title="图片来自网络">
+    
+    
+      <header id="header">
+  <div id="nav-toggle" class="nav-toggle"></div>
+  <div class="head-box global-width">
+    <nav class="nav-box nav-right">
+      
+        <a class="nav-item" href="/" title
+        
+        >首页</a>
+      
+        <a class="nav-item" href="/archives" title
+        
+        >归档</a>
+      
+    </nav>
+  </div>
+</header>
+      <div id="middlecontent" title class="global-width sidebar-right">
+        <section id="main"><article id="post-移动端布局" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 class="article-title" itemprop="name">
+      移动端布局
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2020/01/12/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%B8%83%E5%B1%80/" class="article-date">
+  <time datetime="2020-01-11T16:00:00.000Z" itemprop="datePublished">2020-01-12</time>
+</a>
+    
+    
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html%E3%80%81css/" rel="tag">html、css</a></li></ul>
+
+  </div>
+  
+    <span id="busuanzi_container_page_pv">
+      本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+    </span>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <h3 id="响应式网站设计"><a href="#响应式网站设计" class="headerlink" title="响应式网站设计"></a>响应式网站设计</h3><p>什么是响应式布局</p>
+<ol>
+<li>服务器根据不同的浏览器用户端，为用户呈现不同的页面效果。</li>
+<li>可以让一个网站兼容不同分辨率的设备，给用户更好的视觉使用体验。</li>
+<li>移动互联网催生了响应式布局的诞生。</li>
+</ol>
+<span id="more"></span> 
+
+<p>响应式设计优缺点<br>优点:<br>解决了设备之间的差异化展示,让不同的设备达到最优的视觉体验.<br>缺点:<br>兼容性代码多,工作量大,加载速度受影响<br>对原有网站布局会产生影响,用户判断未必精确.</p>
+<p>响应式设计的原则</p>
+<ol>
+<li>移动优先：在设计的初期就考虑页面如何在多终端展示</li>
+<li>渐进增强：充分发挥硬件设备的最大功能</li>
+</ol>
+<p>如何实现响应式布局</p>
+<ol>
+<li>css3-Media Query：代码简单（媒体查询）</li>
+<li>借助原生 Javascript：主要用于老浏览器上，加载速度慢，不推荐</li>
+<li>第三方的开源框架，如 bootstrap，可以很好的实现浏览器对响应式的支持</li>
+</ol>
+<p>基本语法<br>外联 CSS 语法</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="HTML"><figure class="iseeu highlight /html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;“stylesheet”&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;“wide.css”&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">media</span>=<span class="string">&quot;screen and (min-width:320px)&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;“stylesheet”&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;“mobile.css”&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">media</span>=<span class="string">&quot;screen and (max-width:1000px)&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>内嵌样式的语法</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="HTML"><figure class="iseeu highlight /html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">  <span class="keyword">@media</span> all <span class="keyword">and</span>  (<span class="attribute">min-width</span>:<span class="number">500px</span>) &#123; … &#125;</span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>CSS 2.1 支持 9 种媒体类型——注意：媒体类型名区分大小写<br>braille ——触觉反馈设备<br>embossed ——盲文印刷设备<br>handheld ——小型或手持设备<br>print ——打印机<br>projection ——投影图像，如幻灯<br>screen ——计算机显示器<br>speech ——语音合成器<br>tty ——打字机<br>tv ——电视类<br>all 所有</p>
+<p>响应式不同分辨率设置</p>
+<ol>
+<li>1024px 显屏</li>
+</ol>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="CSS"><figure class="iseeu highlight /css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span> : <span class="number">1024px</span>) &#123; <span class="comment">/* 样式写在这里 */</span> &#125;</span><br></pre></td></tr></table></figure></div>
+
+<ol start="2">
+<li>800px 显屏</li>
+</ol>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="CSS"><figure class="iseeu highlight /css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span> : <span class="number">800px</span>) &#123; <span class="comment">/* 样式写在这里 */</span> &#125;</span><br></pre></td></tr></table></figure></div>
+
+<ol start="3">
+<li>640px 显屏</li>
+</ol>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="CSS"><figure class="iseeu highlight /css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span> : <span class="number">640px</span>) &#123; <span class="comment">/* 样式写在这*/</span> &#125;</span><br></pre></td></tr></table></figure></div>
+
+<ol start="4">
+<li>iPad 横板显屏</li>
+</ol>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="CSS"><figure class="iseeu highlight /css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-device-width</span>: <span class="number">1024px</span>) <span class="keyword">and</span> (<span class="attribute">orientation</span>: landscape) &#123;<span class="comment">/*</span></span><br><span class="line"><span class="comment">样式写在这 */</span> &#125;</span><br></pre></td></tr></table></figure></div>
+
+<ol start="5">
+<li>iPad 竖板显屏</li>
+</ol>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="CSS"><figure class="iseeu highlight /css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-device-width</span>: <span class="number">768px</span>) <span class="keyword">and</span> (<span class="attribute">orientation</span>: portrait) &#123;<span class="comment">/*</span></span><br><span class="line"><span class="comment">样式写在这 */</span> &#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="移动端和-PC-端页面布局的不同点"><a href="#移动端和-PC-端页面布局的不同点" class="headerlink" title="移动端和 PC 端页面布局的不同点"></a>移动端和 PC 端页面布局的不同点</h3><ol>
+<li>显示设备（屏幕）</li>
+<li>操作（鼠标、指尖）</li>
+<li>浏览器内核:移动端不用考虑 ie，但是各种浏览器内核（手机自带）、微信浏览器内核</li>
+<li>运行设备 移动设备（轻便、迅速、便携） pc 端（体验）</li>
+<li>网络不同 移动 4g（注重速度） pc 光纤（注重体验速度）</li>
+</ol>
+<h3 id="做移动端页面和-pc-端页面使用的方法也不同"><a href="#做移动端页面和-pc-端页面使用的方法也不同" class="headerlink" title="做移动端页面和 pc 端页面使用的方法也不同"></a>做移动端页面和 pc 端页面使用的方法也不同</h3><p>页面设置不同：</p>
+<ol>
+<li>Meta 标签设置 </li>
+<li>单位=======用来适应不同的移动端屏幕尺寸；</li>
+</ol>
+<p>Px 像素。类似绝对单位。其实也是相对单位，相对于屏幕的分辨率；<br>Pt 磅 点 打印的尺寸<br>Em 相对单位，相对于父级的 font-size 1em=父级的 font-size（直接的父级）<br>Rem 相对单位，相对于根元素的 font-size 1rem=根元素的 font-size<br>Vw，相对于屏幕的宽度 ，1vw==1%屏幕的宽度<br>Vh 相对单位，相对于屏幕高度，1vh==1%屏幕的高度</p>
+<h3 id="Meta-标签的设置不同"><a href="#Meta-标签的设置不同" class="headerlink" title="Meta 标签的设置不同"></a>Meta 标签的设置不同</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="HTML"><figure class="iseeu highlight /html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span></span></span><br><span class="line"><span class="tag">  <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">content</span>=<span class="string">&quot;width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>width=device-width:宽度等于当前设备的宽度<br>intial-scale:页面首次被显示是可视区域的缩放比例，取值 1.0 则页面按实际尺寸显示，无任何缩放<br>maximum-scale=1.0, minimum-scale=1.0;可视区域的缩放级别，<br>maximum-scale用户可将页面放大的程序，1.0 将禁止用户放大到实际尺寸之上。<br>user-scalable:是否可对页面进行缩放，no 禁止缩放</p>
+<h3 id="Meta-标签的设置不同及其不同的效果（扩展）"><a href="#Meta-标签的设置不同及其不同的效果（扩展）" class="headerlink" title="Meta 标签的设置不同及其不同的效果（扩展）"></a>Meta 标签的设置不同及其不同的效果（扩展）</h3><p>1.强制让文档与设备的宽度保持 1：1</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="HTML"><figure class="iseeu highlight /html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span></span></span><br><span class="line"><span class="tag">  <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">content</span>=<span class="string">&quot;width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>2.忽略页面中的数字识别为电话号码</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="HTML"><figure class="iseeu highlight /html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;format-detection&quot;</span> <span class="attr">content</span>=<span class="string">&quot;telephone=no&quot;</span> /&gt;</span></span><br><span class="line">3.忽略页面中的邮箱格式为邮箱 <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;format-detection&quot;</span> <span class="attr">content</span>=<span class="string">&quot;email=no&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>4.在 web app 应用下状态条（屏幕顶部条）的颜色</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="HTML"><figure class="iseeu highlight /html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;apple-mobile-web-app-status-bar-style&quot;</span> <span class="attr">content</span>=<span class="string">&quot;black&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>认识 ppi 、dpr 、dpi</p>
+<p><strong>屏幕尺寸</strong>：指的是屏幕对角线的长度<br><strong>分辨率</strong>：是指宽度上和高度上最多能显示的物理像素点个数<br><strong>点距</strong>：像素与像素之间的距离，点距和屏幕尺寸决定了分辨率大小<br><strong>PPI</strong>:屏幕像素密度，即每英寸(1 英寸=2.54 厘米)聚集的像素点个数，这里的一英寸还是对角线长度<br><strong>DPI</strong>:每英寸像素点，印刷行业术语。对于电脑屏幕而言和 PPI 是一个意思<br><strong>设备像素</strong>(又称为物理像素): 指设备能控制显示的最小物理单位，意指显示器上一个个的点。从屏幕在工厂生产出的那天起，它上面设备像素点就固定不变了，和屏幕尺寸大小有关，单位 pt。<br><strong>设备独立像素</strong>(也叫密度无关像素或逻辑像素)：可以认为是计算机坐标系统中的一个点，这个点代表一个可以由程序使用的虚拟像素(比如: css 像素)，这个点是没有固定大小的，越小越清晰，然后由相关系统转换为物理像素。<br><strong>css 像素</strong>(也叫虚拟像素)：指的是 CSS 样式代码中使用的逻辑像素，在 CSS 规范中，长度单位可以分为两类，绝对(absolute)单位以及相对(relative)单位。px 是一个相对单位，相对的是设备像素(device pixel)<br><strong>DPR</strong>(设备像素比)：设备像素比 = 设备像素 / css 像素。(在 Retina 屏的 iphone 上，DPR 为 2，1 个 css 像素相当于 2 个物理像素)<br><strong>每英寸像素</strong>(pixel per inch, ppi/PPI): 它表示的是每英寸所拥有的像素(pixel)数目，更确切的说法应该是像素密度，放到显示器上说的是每英寸多少物理像素及显示器设备的点距。数值越高，代表显示屏能够以越高的密度显示图像。<br><strong>设备像素比</strong>(device pixel ratio, dpr/DPR): 它描述的是未缩放状态下，设备像素和 CSS 像素的初始比例关系，也可以解释为默认缩放比例。如何理解这个概念呢？通俗来说，它是指在开发中 1 个 CSS 像素占用多少设备像素，如 dpr=2 代表 1 个 CSS 像素用 2x2 个设备像素来绘制，这是因为 Retina 屏幕把 2x2 个像素当 1 个像素使用。比如原本 44 像素高的顶部导航栏，在 Retina 屏上用了 88 个像素的高度来显示。导致界面元素都变成 2 倍大小</p>
+<h3 id="vw-和-rem-做适配"><a href="#vw-和-rem-做适配" class="headerlink" title="vw 和 rem 做适配"></a>vw 和 rem 做适配</h3><ol>
+<li>只用 vw 单位做适配<br>如果设计稿的尺寸为 750px；那么 100vw=750px; 1vw=7.5px</li>
+<li>vw 结合 rem 做适配<br>假如 ui 图的宽度为 1920px，又因为 vw 会把宽度分为 100 份，那 1vw=19.2px，1920/100=19.2（px），现在这样还是不行，不好算，那就算出每 100px 是多少 vw，100px=(约等于)5.21（vw），这样，设根字体 html 为 5.21vw，则 0.18rem=18px（1rem=100px）<br>1vw=19.2px 1px= 0.05208 vw 100px=5.21vw<br>html{font-size:5.21vw} 5.21vw=100px=1rem</li>
+</ol>
+<h3 id="Js-方法获取-HTMLfontsize（需要手动刷新）"><a href="#Js-方法获取-HTMLfontsize（需要手动刷新）" class="headerlink" title="Js 方法获取 HTMLfontsize（需要手动刷新）"></a>Js 方法获取 HTMLfontsize（需要手动刷新）</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="HTML"><figure class="iseeu highlight /html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">  <span class="keyword">var</span> bw = <span class="built_in">document</span>.documentElement.clientWidth / <span class="number">7.2</span> + <span class="string">&quot;px&quot;</span>; <span class="comment">//获取屏幕宽度)除以7.2，添加上“px”，7.2是设计稿的宽度除以100后得到的值</span></span></span><br><span class="line"><span class="javascript">  <span class="keyword">var</span> htmlTag = <span class="built_in">document</span>.getElementsByTagName(<span class="string">&quot;html&quot;</span>)[<span class="number">0</span>]; <span class="comment">//在文档里面通过元素名来获取元素，html</span></span></span><br><span class="line"><span class="javascript">  htmlTag.style.fontSize = bw; <span class="comment">//把计算后的值复制给根元素的font-size;1rem=100px</span></span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="HTML"><figure class="iseeu highlight /html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">  <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">    <span class="comment">/*720代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是</span></span></span><br><span class="line"><span class="comment"><span class="javascript">                           为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/</span></span></span><br><span class="line"><span class="javascript">    getRem(<span class="number">640</span>, <span class="number">100</span>);</span></span><br><span class="line"><span class="javascript">  &#125;;</span></span><br><span class="line"><span class="javascript">  <span class="built_in">window</span>.onresize = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">    getRem(<span class="number">640</span>, <span class="number">100</span>);</span></span><br><span class="line"><span class="javascript">  &#125;;</span></span><br><span class="line"><span class="javascript">  <span class="function"><span class="keyword">function</span> <span class="title">getRem</span>(<span class="params">pwidth, prem</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> html = <span class="built_in">document</span>.getElementsByTagName(<span class="string">&quot;html&quot;</span>)[<span class="number">0</span>];</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> oWidth =</span></span><br><span class="line"><span class="javascript">      <span class="built_in">document</span>.body.clientWidth || <span class="built_in">document</span>.documentElement.clientWidth;</span></span><br><span class="line"><span class="javascript">    html.style.fontSize = (oWidth / pwidth) * prem + <span class="string">&quot;px&quot;</span>;</span></span><br><span class="line"><span class="javascript">  &#125;</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="移动端适配方案总结"><a href="#移动端适配方案总结" class="headerlink" title="移动端适配方案总结"></a>移动端适配方案总结</h3><p>移动端的适配方案</p>
+<ol>
+<li>Vw 单位做适配<br>1、设计稿尺寸=100vw 算出 1vw=？Px<br>2、量出来的尺寸换算成 vw 单位书写 css 中；</li>
+<li>Vw 结合 rem 适配<br>1、设计稿的尺寸=100vw。算出 1vw=？Px；<br>2、算出 100px=？？vw；<br>3、html{font-size:？？vw}这时 1rem=100px<br>4、量出的尺寸除以 100，就是得出的 rem 单位的值</li>
+<li>Js 适配<br>1、引用 js；注意修改 js 中的一个参数，参数值设置成设计稿的尺寸<br>2、直接 1rem=100px;量出的尺寸除以 100，就是得出的 rem 单位的值</li>
+</ol>
+<hr>
+<p>本文作者： 一只野生东子</p>
+
+      
+    </div>
+    
+      <footer class="article-footer">
+        完
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  <div class="article-nav-block">
+    
+      <a href="/2020/02/08/ES6/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption"></strong>
+        <div class="article-nav-title">
+          
+            ES6
+          
+        </div>
+      </a>
+    
+  </div>
+  <div class="article-nav-block">
+    
+      <a href="/2019/12/11/%E4%BA%8B%E4%BB%B6Event/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">事件Event</div>
+        <strong class="article-nav-caption"></strong>
+      </a>
+    
+  </div>
+</nav>
+
+    <link rel="stylesheet" href="/css/gitment.css"> 
+<script src="/js/gitment.js"></script>
+
+<div id="gitmentContainer"></div>
+
+<script>
+var gitment = new Gitment({
+  owner: '',
+  repo: '',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('gitmentContainer')
+</script>
+
+  
+  
+</article>
+</section>
+        <aside id="sidebar">
+  
+    <div class="widget-box">
+  <div class="avatar-box">
+    <img class="avatar" src="/images/pander.jpg" title="图片来自网络"></img>
+    <h3 class="avatar-name">
+      
+        东子
+      
+    </h3>
+    <p class="avatar-slogan">
+      一 个 不 会 设 计 不 会 配 色 的 前 端 渣 渣
+    </p>
+  </div>
+</div>
+
+
+  
+    
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTTP/" rel="tag">HTTP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog%E3%80%81bash/" rel="tag">blog、bash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css%E3%80%81BFC/" rel="tag">css、BFC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css%E3%80%81%E7%9B%92%E6%A8%A1%E5%9E%8B/" rel="tag">css、盒模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html%E3%80%81css/" rel="tag">html、css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript/" rel="tag">javaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript%E3%80%81Array/" rel="tag">javaScript、Array</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript%E3%80%81css/" rel="tag">javaScript、css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript%E3%80%81es6/" rel="tag">javaScript、es6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/" rel="tag">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vuex/" rel="tag">vuex</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/blog%E3%80%81bash/" style="font-size: 10px;">blog、bash</a> <a href="/tags/css/" style="font-size: 15px;">css</a> <a href="/tags/css%E3%80%81BFC/" style="font-size: 10px;">css、BFC</a> <a href="/tags/css%E3%80%81%E7%9B%92%E6%A8%A1%E5%9E%8B/" style="font-size: 10px;">css、盒模型</a> <a href="/tags/html%E3%80%81css/" style="font-size: 10px;">html、css</a> <a href="/tags/javaScript/" style="font-size: 20px;">javaScript</a> <a href="/tags/javaScript%E3%80%81Array/" style="font-size: 10px;">javaScript、Array</a> <a href="/tags/javaScript%E3%80%81css/" style="font-size: 10px;">javaScript、css</a> <a href="/tags/javaScript%E3%80%81es6/" style="font-size: 10px;">javaScript、es6</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/vue/" style="font-size: 15px;">vue</a> <a href="/tags/vuex/" style="font-size: 10px;">vuex</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/9999/09/">September 9999</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/9999/09/09/%E5%A5%B6%E8%8C%B6/">嗷嗷嗷</a>
+          </li>
+        
+          <li>
+            <a href="/2021/11/29/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/11/%E5%85%B3%E4%BA%8Evuex/">关于VUEX</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/18/%E5%85%B3%E4%BA%8Evue/">关于VUE</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/13/vue%E9%9A%8F%E7%AC%94/">vue开发中需要注意的一些内容</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+      <div class="widget-box">
+    <h3 class="widget-title">友链</h3>
+    <div class="widget">
+      
+        <a style="display: block;" href="https://yiluyanxia.github.io/" title target='_blank'
+        >一路眼瞎</a>
+      
+    </div>
+  </div>
+
+  
+</aside>
+      </div>
+      <footer id="footer">
+  <div class="foot-box global-width">
+    &copy; 2021 东子 &nbsp;&nbsp;
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    &nbsp;|&nbsp;主题 <a target="_blank" rel="noopener" href="https://github.com/yiluyanxia/hexo-theme-antiquity">antiquity</a>
+    <br>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv">不蒜子告之   阁下是第<span id="busuanzi_value_site_pv"></span>个访客</span>
+  </div>
+</footer>
+      <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script>
+if (!window.jQuery) {
+var script = document.createElement('script');
+script.src = "/js/jquery-2.0.3.min.js";
+document.body.write(script);
+}
+</script>
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+    </div>
+    <nav id="mobile-nav" class="mobile-nav-box">
+  <div class="mobile-nav-img mobile-nav-top"></div>
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">归档</a>
+  
+  <div class="mobile-nav-img  mobile-nav-bottom"></div>
+</nav>    
+  </div>
+</body>
+</html>
