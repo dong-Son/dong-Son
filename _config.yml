@@ -101,7 +101,7 @@ theme: yilia
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
+deploy: 
   type: git
-  repo: git@github.com:dong-Son/dongSonBlog.git
+  repo: git@github.com/dong-Son/dong-Son.github.io.git
   branch: master
